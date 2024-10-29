@@ -6,14 +6,14 @@
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  color: white; /* Text color */
-  font-weight: bold; /* Make initials bold */
-  font-size: 0.5rem; /* Font size for initials */
+  color: white;
+  font-weight: bold;
+  font-size: 0.5rem;
   text-align: center;
 }
 
 .initials {
-  z-index: 1; /* Place initials above the background */
+  z-index: 1;
 }
 
 .status-indicator {
@@ -27,9 +27,9 @@
 }
 
 .status-indicator.online {
-  background-color: #4caf50; /* Green for online */
+  background-color: #4caf50;
 }
 
 .status-indicator.offline {
-  background-color: grey; /* Red for offline */
+  background-color: grey;
 }

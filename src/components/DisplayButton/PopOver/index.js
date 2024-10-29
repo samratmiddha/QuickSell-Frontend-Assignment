@@ -23,7 +23,7 @@ const Popover = ({
 
     document.addEventListener("mousedown", handleClickOutside)
     return () => document.removeEventListener("mousedown", handleClickOutside)
-  }, [])
+  }, [buttonRef, popoverRef, setIsVisible])
 
   const calculatePosition = useCallback(() => {
     if (!buttonRef.current) return
@@ -59,7 +59,7 @@ const Popover = ({
         break
     }
     setPosition(newPosition)
-  }, [placement])
+  }, [placement, buttonRef])
   useLayoutEffect(() => {
     if (isVisible) calculatePosition()
   }, [isVisible, calculatePosition])

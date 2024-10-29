@@ -8,7 +8,7 @@ export default function TicketCard({ticket, grouping}) {
     <div className="card">
       <div className="id-avatar-container">
         <p className="ticket-id">{ticket.id}</p>
-        {grouping != GROUPINGS.GROUP_BY_USER && (
+        {grouping !== GROUPINGS.GROUP_BY_USER && (
           <UserAvatar
             name={ticket.user_name}
             isOnline={ticket.user_available}
@@ -16,19 +16,21 @@ export default function TicketCard({ticket, grouping}) {
         )}
       </div>
       <div className="status-title-container">
-        {grouping != GROUPINGS.GROUP_BY_STATUS && (
+        {grouping !== GROUPINGS.GROUP_BY_STATUS && (
           <img
             src={getStatusObject(ticket.status).icon}
-            class="status-icon"
+            alt="status-icon"
+            className="status-icon"
           ></img>
         )}
         <p className="ticket-title">{ticket.title}</p>
       </div>
       <div className="priority-tags-container">
-        {grouping != GROUPINGS.GROUP_BY_PRIORITY && (
+        {grouping !== GROUPINGS.GROUP_BY_PRIORITY && (
           <img
             src={getPriorityObject(ticket.priority).icon}
-            class="priority-icon"
+            alt="priority-icon"
+            className="priority-icon"
           ></img>
         )}
         {ticket.tag.map((tag) => (

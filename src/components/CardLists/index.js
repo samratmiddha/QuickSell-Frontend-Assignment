@@ -2,7 +2,6 @@ import TicketCard from "./TicketCard"
 import "./index.css"
 import addIcon from "../../assets/add.svg"
 import moreIcon from "../../assets/3 dot menu.svg"
-import doneIcon from "../../assets/Done.svg"
 import {getPriorityObject, getStatusObject} from "../../utils"
 import {UserAvatar} from "./UserAvatar"
 import {GROUPINGS, PRIORITIES, STATUS} from "../../constants"
@@ -25,20 +24,20 @@ const CardList = ({data, grouping}) => {
     <div className="card-list-container">
       <div className="card-list-heading">
         <div className="grouping-info">
-          {grouping != GROUPINGS.GROUP_BY_USER && (
-            <img src={getHeadingIcon(data, grouping)}></img>
+          {grouping !== GROUPINGS.GROUP_BY_USER && (
+            <img src={getHeadingIcon(data, grouping)} alt="status-icon"></img>
           )}
-          {grouping == GROUPINGS.GROUP_BY_USER && (
+          {grouping === GROUPINGS.GROUP_BY_USER && (
             <UserAvatar
               name={data.list[0].user_name}
               isOnline={data.list[0].user_available}
             />
           )}
           <p className="value">
-            {grouping == GROUPINGS.GROUP_BY_USER
+            {grouping === GROUPINGS.GROUP_BY_USER
               ? data.list[0].user_name
-              : grouping == GROUPINGS.GROUP_BY_PRIORITY
-              ? grouping.displayName
+              : grouping === GROUPINGS.GROUP_BY_PRIORITY
+              ? getPriorityObject(data.value).displayName
               : data.value}
           </p>
           <p className="count">{data.count}</p>
@@ -81,9 +80,9 @@ const getGroupedData = (data, grouping, ordering) => {
     grouped[groupValue].push(enrichedTicket)
   })
   let allGroupValues = []
-  if (grouping == GROUPINGS.GROUP_BY_PRIORITY) {
+  if (grouping === GROUPINGS.GROUP_BY_PRIORITY) {
     allGroupValues = Object.values(PRIORITIES).map((p) => p.code)
-  } else if (grouping == GROUPINGS.GROUP_BY_STATUS) {
+  } else if (grouping === GROUPINGS.GROUP_BY_STATUS) {
     allGroupValues = Object.values(STATUS).map((s) => s.status)
   } else {
     allGroupValues = Object.keys(grouped)

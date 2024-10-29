@@ -1,7 +1,7 @@
 import displayIcon from "../../assets/Display.svg"
 import downIcon from "../../assets/down.svg"
 import "./index.css"
-import {useState, useRef, useEffect} from "react"
+import {useState, useRef} from "react"
 import Popover from "./PopOver"
 import {GROUPINGS, ORDERINGS} from "../../constants"
 
@@ -55,7 +55,9 @@ export default function DisplayButton({
         >
           {Object.entries(GROUPINGS).map(([key, group]) => (
             <>
-              <option value={group.groupBy}>{group.displayName} </option>
+              <option id={key} value={group.groupBy}>
+                {group.displayName}{" "}
+              </option>
             </>
           ))}
         </select>
@@ -63,13 +65,15 @@ export default function DisplayButton({
       <div className="text-input-container">
         <label htmlFor="ordering">Ordering</label>
         <select
-          value={ordering.orderBy}
+          value={orderingInputVal}
           name="ordering"
           onChange={onOrderingChange}
         >
           {Object.entries(ORDERINGS).map(([key, group]) => (
             <>
-              <option value={group.orderBy}>{group.displayName} </option>
+              <option id={key} value={group.orderBy}>
+                {group.displayName}{" "}
+              </option>
             </>
           ))}
         </select>
@@ -79,9 +83,9 @@ export default function DisplayButton({
   return (
     <div className="container">
       <button id="display-button" ref={buttonRef} onClick={togglePopover}>
-        <img src={displayIcon} className="icon"></img>
+        <img src={displayIcon} className="icon" alt="display-icon"></img>
         <p className="text">Display</p>
-        <img src={downIcon} className="icon"></img>
+        <img src={downIcon} className="icon" alt="down-arrow-icon"></img>
       </button>
       <Popover
         content={popOverContent}
