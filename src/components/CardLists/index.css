@@ -4,9 +4,39 @@
   gap: 1.5rem;
   flex-wrap: wrap;
 }
+.card-list-container {
+  width: 22rem;
+}
 
 .card-list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+.card-list-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-right: 0.5rem;
+}
+.grouping-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.grouping-info > img {
+  height: 1rem;
+  width: 1rem;
+}
+
+.grouping-info > .value {
+  font-weight: bold;
+}
+.grouping-info > .count {
+  color: grey;
+}
+
+.action-button-containers {
+  display: flex;
+  gap: 0.5rem;
 }

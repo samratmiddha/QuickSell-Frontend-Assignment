@@ -1,40 +1,4 @@
-.avatar-container {
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  color: white; /* Text color */
-  font-weight: bold; /* Make initials bold */
-  font-size: 0.5rem; /* Font size for initials */
-  text-align: center;
-}
-
-.initials {
-  z-index: 1; /* Place initials above the background */
-}
-
-.status-indicator {
-  position: absolute;
-  bottom: -0.1rem;
-  right: -0.1rem;
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 50%;
-  border: 1px solid white;
-}
-
-.status-indicator.online {
-  background-color: #4caf50; /* Green for online */
-}
-
-.status-indicator.offline {
-  background-color: grey; /* Red for offline */
-}
 .card {
-  width: 20rem;
   height: 6rem;
   padding: 1rem;
   background-color: #ffffff;
@@ -70,28 +34,30 @@ p {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 4px 16px 0px,
+    rgba(0, 0, 0, 0.04) 0px 0px 0px 1px;
   padding: 0rem 0.5rem;
   border-radius: 0.25rem;
+  color: #bebebf;
+  font-weight: 600;
 }
 .tag > .circle {
   width: 0.5rem;
   height: 0.5rem;
-  background-color: rgb(116, 112, 112);
+  background-color: #bebebf;
   border-radius: 50%;
 }
 .priority-tags-container > .priority-icon {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 4px 16px 0px,
+    rgba(0, 0, 0, 0.04) 0px 0px 0px 1px;
   border-radius: 0.25rem;
 }
 .ticket-id {
-  font-weight: bold;
-  color: gray;
+  font-weight: 600;
+  color: #bebebf;
 }
 .ticket-title {
-  font-weight: bold;
+  font-weight: 600;
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Number of lines */
   -webkit-box-orient: vertical;

@@ -69,7 +69,7 @@ const Popover = ({
       {isVisible && (
         <div
           ref={popoverRef}
-          style={{...position, position: "absolute"}}
+          style={{...position, position: "absolute", zIndex: 10}}
           className="popover-content-container"
         >
           {content}

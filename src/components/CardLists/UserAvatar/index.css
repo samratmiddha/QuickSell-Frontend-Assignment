@@ -1,0 +1,35 @@
+.avatar-container {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  color: white; /* Text color */
+  font-weight: bold; /* Make initials bold */
+  font-size: 0.5rem; /* Font size for initials */
+  text-align: center;
+}
+
+.initials {
+  z-index: 1; /* Place initials above the background */
+}
+
+.status-indicator {
+  position: absolute;
+  bottom: -0.1rem;
+  right: -0.1rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.status-indicator.online {
+  background-color: #4caf50; /* Green for online */
+}
+
+.status-indicator.offline {
+  background-color: grey; /* Red for offline */
+}

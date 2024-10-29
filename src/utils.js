@@ -8,12 +8,12 @@ export const fetchData = (url, setData) => {
 }
 
 export const getStatusObject = (status) => {
-  const statusObject = Object.values(STATUS).find((s) => s.status === status)
+  const statusObject = Object.values(STATUS).find((s) => s.status == status)
   return statusObject
 }
 export const getPriorityObject = (priority) => {
   const priorityObject = Object.values(PRIORITIES).find(
-    (s) => s.code === priority
+    (s) => s.code == priority
   )
   return priorityObject
 }
