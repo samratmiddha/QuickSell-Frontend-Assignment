@@ -51,6 +51,9 @@ p {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 4px 16px 0px,
     rgba(0, 0, 0, 0.04) 0px 0px 0px 1px;
   border-radius: 0.25rem;
+  height: 1rem;
+  width: 1rem;
+  align-self: center;
 }
 .ticket-id {
   font-weight: 600;
