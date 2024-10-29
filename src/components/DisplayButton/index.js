@@ -1,5 +1,5 @@
-import equalizerIcon from "../../assets/equalizer.svg"
-import arrowDownIcon from "../../assets/arrow-down.svg"
+import displayIcon from "../../assets/Display.svg"
+import downIcon from "../../assets/down.svg"
 import "./index.css"
 import {useState, useRef, useEffect} from "react"
 import Popover from "./PopOver"
@@ -79,9 +79,9 @@ export default function DisplayButton({
   return (
     <div className="container">
       <button id="display-button" ref={buttonRef} onClick={togglePopover}>
-        <img src={equalizerIcon} className="icon"></img>
+        <img src={displayIcon} className="icon"></img>
         <p className="text">Display</p>
-        <img src={arrowDownIcon} className="icon"></img>
+        <img src={downIcon} className="icon"></img>
       </button>
       <Popover
         content={popOverContent}
