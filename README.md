@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Quicksell-Frontend-assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌About Project
 
-## Available Scripts
+Develop a React-based Kanban-board app that interfaces with the provided API by Quicksell. Users gain the ability to group tickets dynamically by status, user, or priority, and sort them based on priority or title.
 
-In the project directory, you can run:
+## 🖥️ Tech Stack
 
-### `npm start`
+**Frontend :**
+<code><img height="40" src="https://raw.githubusercontent.com/AnmolVerma404/AnmolVerma404/main/gif/css.webp" alt="css"></code>
+<code> <img src="https://raw.githubusercontent.com/AnmolVerma404/AnmolVerma404/main/gif/js.webp" height="40" alt="js"></code>
+<code><img height="40" src="https://raw.githubusercontent.com/AnmolVerma404/AnmolVerma404/main/gif/react.webp" alt="react"></code>
+![react-router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)&nbsp;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Sneak Peek of Kanban-Board :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<table>
+  <tr>
+    <td><img src="https://github.com/samratmiddha/QuickSell-Frontend-Assignment/tree/master/src/assets/group_by_user.png" alt="" /></td>
+    <td><img src="https://github.com/samratmiddha/QuickSell-Frontend-Assignment/tree/master/src/assets/group_by_status.png" alt="" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/samratmiddha/QuickSell-Frontend-Assignment/tree/master/src/assets/group_by_priority.png" alt="" /></td>
+    <td><img src="https://github.com/samratmiddha/QuickSell-Frontend-Assignment/tree/master/src/assets/grouping_choices.png" alt="" /></td>
+  </tr>
+</table>
 
-### `npm test`
+© 2024 Samrat Middha
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
